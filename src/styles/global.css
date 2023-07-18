@@ -1,0 +1,154 @@
+p{
+  color: #667085;
+  font-size: 14px;
+}
+.h1 {
+  font-size: 61px;
+  line-height: 73px;
+  font-weight: 400;
+}
+.h2 {
+  font-size: 49px;
+  line-height: 58px;
+  font-weight: 400;
+}
+.h3 {
+  font-size: 39px;
+  line-height: 46px;
+  font-weight: 400;
+}
+.h4 {
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 400;
+}
+.h5 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.title1 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.title2 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.text2 {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.button_title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+input::placeholder {
+  color: #b1b1b1;
+}
+.icon-color {
+  color: #b1b1b1;
+}
+.bold {
+  font-weight: 700 !important;
+}
+.basic-50 {
+  background-color: #e6f2f9;
+}
+.basic-100 {
+  background-color: #b2d5ed;
+}
+.basic-200 {
+  background-color: #8cc1e4;
+}
+.basic-300 {
+  background-color: #58a5d7;
+}
+.basic-400 {
+  background-color: #3794d0;
+}
+.basic-500 {
+  background-color: #0579c4;
+}
+.basic-600 {
+  background-color: #056eb2;
+}
+.basic-700 {
+  background-color: #04568b;
+}
+.basic-800 {
+  background-color: #03436c;
+}
+.basic-900 {
+  background-color: #023352;
+}
+.primary-50 {
+  background-color: #e6ebf5;
+}
+.primary-100 {
+  background-color: #b3c1e1;
+}
+.primary-200 {
+  background-color: #8ea3d3;
+}
+.primary-300 {
+  background-color: #5a79bf;
+}
+.primary-400 {
+  background-color: #3a5fb2;
+}
+.primary-500 {
+  background-color: #09379f;
+}
+.primary-600 {
+  background-color: #083291;
+}
+.primary-700 {
+  background-color: #062771;
+}
+.primary-800 {
+  background-color: #051e57;
+}
+.primary-900 {
+  background-color: #041743;
+}
+.image_height {
+  height: 72px;
+  width: 72px;
+}
+
+@media screen and (max-width: 768px) {
+  .image_height {
+    height: 118px;
+    width: 118px;
+  }
+  .h4 {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
