@@ -169,19 +169,70 @@ const HomePage = () => {
         </div>
       </section>
       <section className="sidebar">
-        <div style={{ width: "159px", marginTop: "60px" }} className="fixed">
+        <div style={{ width: "159px", marginTop: "75px" }} className="fixed-top ms-4">
           <SideBar />
         </div>
       </section>
       <section>
-        <div style={{ marginLeft: "200px", marginTop: "50px" }}>
-          <div className="d-flex align-items.center">
-            <AppInput
-              name={"search"}
-              iconleft="bi bi-search"
-              placeholder="Search"
-            />
-            <AiTwotoneStar />
+        <div style={{ marginLeft: "170px" }}>
+            <div
+              className="d-flex align-items-center fixed-top ms-2"
+              style={{ width: "288px", left: "200px", top: "85px" }}
+            >
+              <AppInput
+                name={"search"}
+                iconleft="bi bi-search"
+                placeholder="Search"
+              />
+              <div className="px-2 py-1 bg-light rounded-3 ms-2 ">
+                <AiTwotoneStar className="text-success fs-4" />
+              </div>
+            </div>
+          <div style={{marginTop:"150px"}}>
+            <div className="scroll ms-2" style={{width:"346px"}}>
+              <div className="d-flex align-items-center mb-3">
+                <img src={prof} style={{ width:"40px", height:"40px"}} className="rounded-circle me-2" />
+                <div className="me-3" style={{width:"146px"}}>
+                  <p className="bold">Olivia Rhye</p>
+                  <p className="text-truncate">
+                    Is there anything exciting happening in your life that you'd
+                    like to share?
+                  </p>
+                </div>
+                <div>
+                  <p className="m-0" style={{fontSize:"10px"}}>11:12am</p>
+                  <span className="badge bg-primary m-0 ms-2" style={{fontSize:"8px"}}>2</span>
+                </div>
+              </div>
+              <div className="d-flex align-items-center mb-3">
+                <img src={prof} style={{ width:"40px", height:"40px"}} className="rounded-circle me-2" />
+                <div className="me-3" style={{width:"146px"}}>
+                  <p className="bold">Olivia Rhye</p>
+                  <p className="text-truncate">
+                    Is there anything exciting happening in your life that you'd
+                    like to share?
+                  </p>
+                </div>
+                <div>
+                  <p className="m-0" style={{fontSize:"10px"}}>11:12am</p>
+                  <span className="badge bg-primary m-0 ms-2" style={{fontSize:"8px"}}>2</span>
+                </div>
+              </div>
+              <div className="d-flex align-items-center mb-3">
+                <img src={prof} style={{ width:"40px", height:"40px"}} className="rounded-circle me-2" />
+                <div className="me-3" style={{width:"146px"}}>
+                  <p className="bold">Olivia Rhye</p>
+                  <p className="text-truncate">
+                    Is there anything exciting happening in your life that you'd
+                    like to share?
+                  </p>
+                </div>
+                <div>
+                  <p className="m-0" style={{fontSize:"10px"}}>11:12am</p>
+                  <span className="badge bg-primary m-0 ms-2" style={{fontSize:"8px"}}>2</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
