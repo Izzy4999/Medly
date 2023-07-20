@@ -6,6 +6,7 @@ interface Props extends ComponentProps<"input"> {
   placeholder?: string;
   name: string;
   error?: unknown;
+  img?: React.ReactNode;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void | Promise<void>;
   onClick?: () => void;
 }
@@ -17,6 +18,7 @@ const AppInput = ({
   iconleft,
   iconright,
   placeholder,
+  img,
   onClick,
   ...rest
 }: Props) => {
@@ -24,10 +26,11 @@ const AppInput = ({
     <div
       className={
         error
-          ? "d-flex border border-danger rounded p-1 align-items-center justify-content-center"
-          : "d-flex border rounded p-1 align-items-center justify-content-center"
+          ? "d-flex border border-danger rounded p-1 align-items-center justify-content-center w-100"
+          : "d-flex border rounded p-1 align-items-center justify-content-center w-100"
       }
     >
+      {img}
       {iconleft && (
         <i className={`${iconleft} ps-1 icon-color`} onClick={onClick}></i>
       )}
