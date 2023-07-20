@@ -1,65 +1,81 @@
+body {
+  font-family: Ubuntu;
+}
 p {
   color: #667085;
   font-size: 14px;
   margin: 0 !important;
+  font-family: Ubuntu;
 }
 .h1 {
   font-size: 61px;
   line-height: 73px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .h2 {
   font-size: 49px;
   line-height: 58px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .h3 {
   font-size: 39px;
   line-height: 46px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .h4 {
   font-size: 32px;
   line-height: 37px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .h5 {
   font-size: 25px;
   line-height: 30px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .title1 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .title2 {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .text {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .text2 {
   font-size: 10px;
   line-height: 12px;
   font-weight: 400;
+  font-family: Ubuntu;
 }
 .label {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  font-family: Ubuntu;
 }
 .button_title {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  font-family: Ubuntu;
 }
 input::placeholder {
   color: #b1b1b1;
+  font-family: Ubuntu;
 }
 .icon-color {
   color: #b1b1b1;
@@ -170,6 +186,14 @@ input[type="number"] {
 .scroll::-webkit-scrollbar {
   display: none;
 }
+.scrollx {
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.scrollx::-webkit-scrollbar {
+  display: none;
+}
 
 .custom-shadow {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -190,15 +214,18 @@ input[type="number"] {
   text-overflow: ellipsis;
 }
 
-
-
-.image-holder{
+.image-holder {
+  border: 2px white solid;
+  border-radius: 50%;
   position: absolute;
   margin-top: -30px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
-  text-align: center;
-
-  width: 100%;
+  margin-left: 95px;
+  margin-right: auto;
+}
+.footer_text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
