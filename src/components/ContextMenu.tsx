@@ -5,8 +5,8 @@ import { MdOutlineBlock } from "react-icons/md";
 import { HiOutlineTrash } from "react-icons/hi";
 
 interface Props {
-  x: number;
-  y: number;
+  x: number | string;
+  y: number | string;
   showMenu: boolean;
 }
 const ContextMenu = ({ showMenu, x, y }: Props) => {
