@@ -4,32 +4,37 @@ const useRightClickMenu = () => {
   const [x, setX] = useState<number | string>(0);
   const [y, setY] = useState<number | string>(0);
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [selected, setSelected] = useState()
 
-  const handleContextMenu = (e: MouseEvent) => {
+  const handleContextMenu = (e: React.MouseEvent,righClicked:any) => {
     e.preventDefault();
-    e.pageX + 200 > window.innerWidth
+    e.clientX - 200 > window.innerWidth
       ? setX(`${window.innerWidth - 240}px`)
       : setX(e.pageX);
     e.pageY + 185 > window.innerHeight
       ? setY(`${window.innerHeight - 215}px`)
       : setY(e.pageY);
     setShowMenu(true);
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+    setSelected(righClicked);
+
   };
 
   const handleClick = () => {
     showMenu && setShowMenu(false);
+    setX(0);
+    setY(0);
   };
 
   useEffect(() => {
     document.addEventListener("click", handleClick);
-    document.addEventListener("contextmenu", handleContextMenu);
     return () => {
       document.removeEventListener("click", handleClick);
-      document.removeEventListener("contextmenu", handleContextMenu);
     };
   });
 
-  return { x, y, showMenu };
+  return { x, y, showMenu, handleContextMenu, selected };
 };
 
 export default useRightClickMenu;

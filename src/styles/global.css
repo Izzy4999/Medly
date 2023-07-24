@@ -235,13 +235,20 @@ input[type="number"] {
 .chat__body {
   height: 380px;
 }
-.time{
+.time {
   color: #667085;
   font-size: 10px;
 }
-.cursor p{
+.cursor p {
   cursor: pointer;
 }
-.cursor .hover:hover{
+.cursor .hover:hover {
   background-color: #e6ebf5;
+}
+.box_hover:hover{
+  background-color: #e6ebf5;
+  cursor: pointer;
+}
+.z-index-front {
+  z-index: 1050;
 }

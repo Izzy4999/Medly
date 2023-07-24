@@ -1,14 +1,21 @@
 interface Props {
   image: string;
+  id:number;
   chatName: string;
   lastText: string;
   time: string;
   noOfUnread: number;
+  onContextMenu: (event: React.MouseEvent<HTMLDivElement>)=>  void;
+  selected: any;
 }
-const ChatBox = ({ image, chatName, lastText, noOfUnread, time }: Props) => {
-  return (
-    <>
-      <div className="d-flex align-items-center mb-3">
+const ChatBox = ({ image, id, chatName, lastText, noOfUnread, time, onContextMenu, selected }: Props) => {
+   return (
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  <div className={selected?.id === id ? "basic-100" :"box_hover"}>
+      <div
+        className="d-flex align-items-center px-3 py-2 hover"
+        onContextMenu={onContextMenu}
+      >
         <img
           src={image}
           style={{ width: "40px", height: "40px" }}
@@ -30,7 +37,7 @@ const ChatBox = ({ image, chatName, lastText, noOfUnread, time }: Props) => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

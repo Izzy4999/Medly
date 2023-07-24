@@ -21,7 +21,7 @@ const ContextMenu = ({ showMenu, x, y }: Props) => {
         height: "185px",
         overflow: "hidden"
       }}
-      className="rounded-3 cursor custom-shadow"
+      className="rounded-3 z-index-front cursor custom-shadow"
     >
       <p className="px-2 py-2 hover">Privacy & Support</p>
       <hr className="m-0" />
