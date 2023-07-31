@@ -203,7 +203,7 @@ const HomePage = () => {
               <p className="bold">Notification</p>
               <i className="bi bi-gear bold"></i>
             </div>
-            <div className="px-5 py-3 scroll">
+            <div className="px-5 py-3 scroll" style={{ height: "80vh" }}>
               <Notification
                 img_src={logo}
                 message={"Joseph liked your photo"}
@@ -347,9 +347,7 @@ const HomePage = () => {
             </div>
           </div>
           <div>
-            <div
-              style={{marginTop:"70px" }}
-            >
+            <div style={{ marginTop: "70px" }}>
               <div className="d-flex justify-content-between align-items-center px-3 mb-3">
                 <ProfImage img_src={logo} />
                 <ProfImage img_src={logo} />
@@ -366,7 +364,7 @@ const HomePage = () => {
                 <i className="bi bi-three-dots"></i>
               </div>
             </div>
-            <div className=" mt-2 me-5 py-3 overflow-hidden">
+            <div className=" mt-2 me-5 py-3 scroll" style={{ height: "73vh" }}>
               <FriendCard img_src={prof} name={"Aliya Abubakar"} />
               <FriendCard img_src={prof} name={"Aliya Abubakar"} />
               <FriendCard img_src={prof} name={"Aliya Abubakar"} />
