@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { AiTwotoneStar } from "react-icons/ai";
-import { VscSend } from "react-icons/vsc";
 
 import logo from "../../assets/prof.jpg";
 import image from "../../assets/bg.jpg";
@@ -9,12 +7,12 @@ import prof from "../../assets/prof2.jpg";
 import medly from "../../assets/M5.png";
 import AppInput from "../../components/AppInput";
 import SideBar from "../../components/SideBar";
-import ChatBox from "../../components/ChatBox";
-import useRightClickMenu from "../../hooks/useRightClickMenu";
-import ContextMenu from "../../components/ContextMenu";
+import ProfImage from "../../components/ProfImage";
+import AppButton from "../../components/AppButton";
+import Notification from "../../components/Notification";
+import FriendCard from "../../components/FriendCard";
 
 const HomePage = () => {
-
   const posts = [
     {
       userPic: logo,
@@ -184,12 +182,227 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="sidebar">
+      <section className="sidebar h-100">
         <div
           style={{ width: "159px", marginTop: "75px" }}
           className="fixed-top ms-4"
         >
           <SideBar />
+        </div>
+      </section>
+      <section>
+        <div
+          style={{ marginLeft: "170px" }}
+          className="d-flex justify-content-between"
+        >
+          <div className="ms-3" style={{ width: "700px" }}>
+            <div
+              style={{ marginTop: "80px" }}
+              className="d-flex justify-content-between px-2 py-3"
+            >
+              <p className="bold">Notification</p>
+              <i className="bi bi-gear bold"></i>
+            </div>
+            <div className="px-5 py-3 scroll">
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={false}
+                notification={true}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={true}
+                notification={false}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={false}
+                notification={true}
+              />
+              <Notification
+                img_src={logo}
+                message={"Joseph liked your photo"}
+                time={"2 hour agp"}
+                follow={false}
+                notification={false}
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              style={{marginTop:"70px" }}
+            >
+              <div className="d-flex justify-content-between align-items-center px-3 mb-3">
+                <ProfImage img_src={logo} />
+                <ProfImage img_src={logo} />
+                <ProfImage img_src={logo} />
+                <ProfImage img_src={logo} />
+              </div>
+              <AppInput
+                name={"search"}
+                placeholder="Search"
+                iconleft="bi bi-search"
+              />
+              <div className="d-flex justify-content-between align-itemss-center mt-3 px-1">
+                <p className="bold">Friends</p>
+                <i className="bi bi-three-dots"></i>
+              </div>
+            </div>
+            <div className=" mt-2 me-5 py-3 overflow-hidden">
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard
+                img_src={prof}
+                name={"Aliya Abubakar"}
+                lastSeen="14:22PM"
+              />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard
+                img_src={prof}
+                name={"Aliya Abubakar"}
+                lastSeen="14:22PM"
+              />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard
+                img_src={prof}
+                name={"Aliya Abubakar"}
+                lastSeen="14:22PM"
+              />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+              <FriendCard
+                img_src={prof}
+                name={"Aliya Abubakar"}
+                lastSeen="11:25AM"
+              />
+              <FriendCard img_src={prof} name={"Aliya Abubakar"} />
+            </div>
+          </div>
         </div>
       </section>
     </div>

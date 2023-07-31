@@ -1,5 +1,8 @@
 body {
   font-family: Ubuntu;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 p {
   color: #667085;
@@ -182,6 +185,7 @@ input[type="number"] {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  max-height: 100vh;
 }
 .scroll::-webkit-scrollbar {
   display: none;
@@ -251,4 +255,7 @@ input[type="number"] {
 }
 .z-index-front {
   z-index: 1050;
+}
+.w-100px{
+  width: 100px !important;
 }
