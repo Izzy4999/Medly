@@ -186,12 +186,14 @@ input[type="number"] {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
   max-height: 100vh;
+  overflow-x: hidden;
 }
 .scroll::-webkit-scrollbar {
   display: none;
 }
 .scrollx {
   overflow-x: scroll;
+  overflow-y: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }

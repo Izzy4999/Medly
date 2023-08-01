@@ -7,15 +7,40 @@ import prof from "../../assets/prof2.jpg";
 import medly from "../../assets/M5.png";
 import AppInput from "../../components/AppInput";
 import SideBar from "../../components/SideBar";
-import { MdDriveFolderUpload } from "react-icons/md";
-import { AiOutlineEye } from "react-icons/ai";
+import Groups from "../../components/Groups";
 import ProfImage from "../../components/ProfImage";
 import AppButton from "../../components/AppButton";
-import Notification from "../../components/Notification";
-import FriendCard from "../../components/FriendCard";
+import People from "../../components/People";
+import Post from "../../components/Post";
+
+import { useState } from "react";
 
 const HomePage = () => {
   const posts = [
+    {
+      userPic: logo,
+      profilePicture: logo,
+      name: "Amani Osei",
+      roles:
+        "Doctor | Gynecologist | Health Adviser | Open to work from anywhere in the world as long as it is remote",
+      location: "Ghana",
+      time: "2hr",
+      likes: 100,
+      comments: 20,
+      reposts: 1,
+    },
+    {
+      userPic: logo,
+      profilePicture: logo,
+      name: "Amani Osei",
+      roles:
+        "Doctor | Gynecologist | Health Adviser | Open to work from anywhere in the world as long as it is remote",
+      location: "Ghana",
+      time: "2hr",
+      likes: 100,
+      comments: 20,
+      reposts: 1,
+    },
     {
       userPic: logo,
       profilePicture: logo,
@@ -192,39 +217,7 @@ const HomePage = () => {
           <SideBar />
         </div>
       </section>
-      <section>
-        <div className="" style={{ marginLeft: "170px", marginTop: "80px" }}>
-          <div
-            className="border rounded-5 rounded-bottom bg-success mt-5 position-relative"
-            style={{ height: "250px" }}
-          >
-            <div className="position-absolute top-50" style={{ left: "80px" }}>
-              <img
-                src={logo}
-                className="rounded-circle bg-white p-1"
-                style={{ width: "158px", height: "158px" }}
-              />
-            </div>
-            <button
-              style={{ color: "#667085" }}
-              className="primary-50 border-0 text position-absolute bottom-0 end-0 mb-3 me-4 rounded-2 px-3 py-1 d-flex justify-content-center align-items-center"
-            >
-              <MdDriveFolderUpload size={17} className="me-1" />
-              Edit Cover Photo
-            </button>
-          </div>
-          <div className="px-5 mt-4 py-2 d-flex justify-content-between align-items-center">
-            <div className="ps-5">
-              <h4 className="bold title1 m-0">Phonix Baker</h4>
-              <p>Tech Recruiter</p>
-            </div>
-            <div className="d-flex align-items-center">
-              <AiOutlineEye />
-              <p className="ms-4">Edit basic info</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section></section>
     </div>
   );
 };
